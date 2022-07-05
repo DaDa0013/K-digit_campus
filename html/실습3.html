@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>회원가입</h1>
+    <form>
+      <fieldset>
+        <legend>필수 입력 사항</legend>
+        <table>
+          <tr>
+            <th>ID</th>
+            <td>
+              <input type="text" placeholder="아이디 10글자 이내" />
+            </td>
+            <td><input type="button" value="중복 확인" /></td>
+          </tr>
+          <tr>
+            <th>비밀번호</th>
+            <td colspan="2">
+              <input
+                type="password"
+                placeholder="영문, 숫자, 특수문자 포함 8자 이상"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>비밀번호 확인</th>
+            <td><input type="password" /></td>
+          </tr>
+          <tr>
+            <th>Email</th>
+            <td>
+              <input type="email" />
+              <select>
+                <option value="1" selected>직접입력</option>
+                <option value="2">@naver.com</option>
+                <option value="3">@gmail.com</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>추가 정보</legend>
+        <p>
+          성별: <input type="radio" value="male" /> 남자
+          <input type="radio" value="female" />여자
+        </p>
+        <p>생년월일: <input type="date" /></p>
+        <p>취미</p>
+        <p>
+          <input type="checkbox" value="baseball" /> 야구
+          <input type="checkbox" value="baseball" /> 농구
+          <input type="checkbox" value="baseball" /> 축구
+        </p>
+        <p>
+          <input type="checkbox" value="baseball" /> 공부
+          <input type="checkbox" value="baseball" /> 음악감상
+        </p>
+        <p>
+          <input type="radio" value="baseball" /> 기타 <input type="text" />
+        </p>
+        <p>자기소개</p>
+        <textarea cols="30" rows="20"></textarea>
+      </fieldset>
+    </form>
+  </body>
+</html>
